@@ -13,13 +13,15 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="style.css" />
 
     <title>RES</title>
   </head>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md fixed-top navbar-light">
+    <nav class="navbar navbar-expand-md fixed-top ">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img class="logo" src="img\logo.jpeg" alt="" />
@@ -40,17 +42,15 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skill Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#events">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#team">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#carriers">Carriers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -72,7 +72,12 @@
         <div class="col-lg-12 hero-text text-center">
           <h1>Research Education Society</h1>
           <p>Education with Values. Skills with Purpose.</p>
-        </div>
+          <!-- From Uiverse.io by elijahgummer --> 
+<button role="button" class="golden-button">
+  <span class="golden-text">Explore !</span>
+</button>
+
+</div>
 
         <div class="hero-brands col-lg-12 text-center">
           <img class="brands" src="img\logo1.jpeg" alt="" />
@@ -85,64 +90,66 @@
 
     <!--Hero Section Ends-->
 
-    <!--about section-->
-    <section class="about text-center" id="about">
-      <div class="container text-center about-container">
-        <h1 class="titles mt-5">About Us</h1>
-        <div class="row">
-          <div class="col-lg-12">
-            <p class="about-text">
-              Research Education Society (RES) is a leading educational and
-              skill development organization dedicated to empowering individuals
-              through quality education and industry-oriented training. With a
-              strong commitment to academic excellence and social
-              responsibility, RES has been at the forefront of transforming
-              lives and communities since its inception.
-            </p>
+  
 
-            <p>
-              Empowering Minds, Transforming Lives Since 1990. For over three
-              decades, the Research Education Society (RES), Bidar, has been
-              more than just an institution—it has been a catalyst for change.
-              Established in 1990, we have dedicated ourselves to a singular
-              mission: bridging the gap between potential and opportunity. From
-              our humble beginnings in Bidar, RES has evolved into a premier
-              multi-dimensional network. We serve as a vital link between
-              academic excellence, vocational mastery, and social welfare,
-              ensuring that every student, youth, and marginalized individual we
-              reach has a pathway to a sustainable future.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="stats">
-              <div>
-                <h2 class="counter" data-target="1200">0</h2>
-                <p>Students Trained</p>
-              </div>
+    
+<!-- Skill Programmes -->
+<section class="skill-programs py-5" id="skills">
+  <div class="container text-center">
+    <h1 class="titles mb-5">Skill Programmes</h1>
 
-              <div>
-                <h2 class="counter" data-target="30">0</h2>
-                <p>Training Conducted</p>
-              </div>
+    <div class="row g-4">
 
-              <div>
-                <h2 class="counter" data-target="1150">0</h2>
-                <p>Jobs Placed</p>
-              </div>
-              <div>
-                <h2 class="counter" data-target="250">0</h2>
-                <p>Trained Professionals</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <a href="MOT.html" class="skill-card">
+          <img src="img/program1.png" alt="">
+          <p>MOT</p>
+        </a>
       </div>
-    </section>
-    <!--about section ends-->
 
-    <!--Events-->
+      <div class="col-12 col-md-4 col-lg-4">
+        <a href="PMKVY.html" class="skill-card">
+          <img src="img/program2.png" alt="">
+          <p>PMKVY</p>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-4">
+        <a href="PMKK.html" class="skill-card">
+          <img src="img/program3.png" alt="">
+          <p>PMKK</p>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-4">
+        <a href="PMVK.html" class="skill-card">
+          <img src="img/program4.jpeg" alt="">
+          <p>PMVK</p>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-4 mx-auto">
+        <a href="CSR.html" class="skill-card">
+          <img src="img/program5.png" alt="">
+          <p>CSR</p>
+        </a>
+      </div>
+
+       <div class="col-12 col-md-4 col-lg-4 mx-auto">
+        <a href="CMKK.html" class="skill-card">
+          <img src="img/program6.jpg" alt="">
+          <p>CMKKY</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!--Events
 
     <div class="container events-container text-center">
       <svg class="d-none" xmlns="http://www.w3.org/2000/svg">
@@ -157,10 +164,11 @@
           />
         </symbol>
       </svg>
-      <h1 class="titles mt-5">Events</h1>
+     
 
-      <section class="photo-gallery" id="events">
+      <section class="photo-gallery" id="skill">
         <div class="container">
+            <h1 class="titles mt-5">Skill Programmes</h1>
           <div
             class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid"
           >
@@ -274,7 +282,7 @@
             ></button>
             <div class="modal-body">
               <div class="lightbox-content">
-                <!-- JS content here -->
+               
               </div>
             </div>
           </div>
@@ -282,11 +290,167 @@
       </div>
     </div>
 
-    <!--Events-->
+    Events-->
+
+  
+<!-- Services Section -->
+<section class="services py-5">
+  <div class="container text-center" id="services">
+
+    <h1 class="titles mb-5">Services</h1>
+
+    <div class="row g-4">
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="service-card text-center">
+          <i class="bi bi-briefcase service-icon"></i>
+          <p>Pre-Employment Training</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="service-card text-center">
+          <i class="bi bi-person-check service-icon"></i>
+          <p>Onboard Training</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="service-card text-center">
+          <i class="bi bi-tools service-icon"></i>
+          <p>Skill Training</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="service-card text-center">
+          <i class="bi bi-people service-icon"></i>
+          <p>Employee Training</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="service-card text-center">
+          <i class="bi bi-compass service-icon"></i>
+          <p>Career Guidance</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="service-card text-center">
+          <i class="bi bi-building service-icon"></i>
+          <p>Placements</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="service-card text-center">
+          <i class="bi bi-lightbulb service-icon"></i>
+          <p>Entrepreneurial Support</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="service-card text-center">
+          <i class="bi bi-bank service-icon"></i>
+          <p>Govt Subsidy Awareness</p>
+        </div>
+      </div>
+
+    </div>
+
+    
+<!-- Goal Statement -->
+<div class="row mt-5">
+  <div class="col-lg-10 mx-auto">
+    <div class="goal-box">
+      <h3 class="mb-3 titles">OUR GOAL</h3>
+      <i class="bi bi-bullseye ico"></i>
+      <p>
+        To empower unemployed youth and individuals across India by equipping them with
+        inclusive, practical, and future-ready skills that enable them to become job creators rather
+        than job seekers. Through quality training, entrepreneurship development, and innovation-driven
+        programs, we aim to build a skilled workforce that contributes to sustainable economic growth.
+
+        We are committed to promoting financial independence for women by ensuring equal opportunities
+        in learning, leadership, and enterprise development. By supporting local manufacturing and
+        encouraging indigenous industries in line with the Make in India initiative, we strive to
+        strengthen self-reliant communities.
+
+        Ultimately, our goal is to contribute to the vision of Aatmanirbhar Bharat by fostering a culture
+        of skill, innovation, and entrepreneurship that enhances the nation’s cultural strength and
+        economic prosperity.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+
+      <!--about section-->
+    <section class="about text-center" id="about">
+      <div class="container text-center about-container">
+        <h1 class="titles mt-5">About Us</h1>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="about-text">
+              Research Education Society (RES) is a leading educational and
+              skill development organization dedicated to empowering individuals
+              through quality education and industry-oriented training. With a
+              strong commitment to academic excellence and social
+              responsibility, RES has been at the forefront of transforming
+              lives and communities since its inception.
+            </p>
+
+            <p>
+              Empowering Minds, Transforming Lives Since 1990. For over three
+              decades, the Research Education Society (RES), Bidar, has been
+              more than just an institution—it has been a catalyst for change.
+              Established in 1990, we have dedicated ourselves to a singular
+              mission: bridging the gap between potential and opportunity. From
+              our humble beginnings in Bidar, RES has evolved into a premier
+              multi-dimensional network. We serve as a vital link between
+              academic excellence, vocational mastery, and social welfare,
+              ensuring that every student, youth, and marginalized individual we
+              reach has a pathway to a sustainable future.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="stats">
+              <div>
+                <h2 class="counter" data-target="1200">0</h2>
+                <p>Students Trained</p>
+              </div>
+
+              <div>
+                <h2 class="counter" data-target="30">0</h2>
+                <p>Training Conducted</p>
+              </div>
+
+              <div>
+                <h2 class="counter" data-target="1150">0</h2>
+                <p>Jobs Placed</p>
+              </div>
+              <div>
+                <h2 class="counter" data-target="250">0</h2>
+                <p>Trained Professionals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about section ends-->
     <!--Team-->
     <section class="py-5" id="team">
       <div class="container text-center">
-        <h1 class="titles mt-5">Team</h1>
+      
         <!-- Section Header -->
         <div class="row text-center mb-5">
           <div class="col-12">
@@ -388,76 +552,82 @@
     </section>
     <!--Team-->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section py-5 text-center">
-      <h1 class="titles mb-5">Contact Us</h1>
-      <div class="container">
-        <div class="row g-4">
-          <!-- Left Side Map -->
-          <div class="col-lg-6">
-            <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.667348649038!2d77.50764707554765!3d17.901001587805315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcec72b20edcbb3%3A0x3e1935f2f5095972!2sThe%20Saroja%20Grand%20Hall!5e0!3m2!1sen!2sin!4v1772659485810!5m2!1sen!2sin"
-                width="auto"
-                height="350"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5 text-center">
+<h1 class="titles mb-5">Contact Us</h1>
 
-          <!-- Right Side Form -->
-          <div class="col-lg-6 text-start" action="https://formspree.io/f/xzdannpa"
-  method="POST">
-            <form class="contact-form" >
-              <div class="mb-3">
-                <label class="form-label">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
+<div class="container">
+<div class="row g-4">
 
-              <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
+<!-- LEFT SIDE -->
+<div class="col-lg-6">
 
-              <div class="mb-3">
-                <label class="form-label">Phone</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  placeholder="Enter your phone number"
-                />
-              </div>
+<div class="row g-3">
 
-              <div class="mb-3">
-                <label class="form-label">Description</label>
-                <textarea
-                  class="form-control"
-                  rows="4"
-                  placeholder="Your message"
-                ></textarea>
-              </div>
+<!-- Map -->
+<div class="col-12 col-lg-6">
+<iframe
+src="https://www.google.com/maps?q=Bidar&output=embed"
+width="100%"
+height="250"
+style="border:0"
+loading="lazy">
+</iframe>
+</div>
 
-              <button type="submit" class="btn btn-warning w-100">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- Image -->
+<div class="col-12 col-lg-6 text-start">
+<i class="bi bi-geo-alt-fill">Hno. 9-12-365/A VNC BIdar 585401</i> <br>
+<i class="bi bi-telephone">+91 9620214555</i> <br>
+<i class="bi bi-envelope-at-fill">info@researcheducation.org</i>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RIGHT SIDE FORM -->
+<div class="col-lg-6 text-start">
+
+<form 
+action="https://formspree.io/f/xzdannpa" 
+method="POST"
+class="contact-form">
+
+<input type="hidden" name="_subject" value="New Contact Message">
+
+<div class="mb-3">
+<label class="form-label">Name</label>
+<input type="text" name="name" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" name="email" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Phone</label>
+<input type="tel" name="phone" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea name="message" rows="4" class="form-control"></textarea>
+</div>
+
+<button type="submit" class="btn btn-warning w-100">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+</div>
+</section>
 
   
 <!-- Footer -->
