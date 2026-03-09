@@ -1,6 +1,7 @@
 
 .nav-link{
-  color:orange
+  color:orange;
+  font-weight: 500;
 }
 
 .navbar .logo {
@@ -9,49 +10,69 @@
 }
 
 /*hero section*/
-.hero {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  color: white;
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+position:relative;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+color:white;
+text-align:center;
 }
 
-/* background video */
-.hero-video {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  object-fit: cover;
-  z-index: -1;
-  filter: blur(5px);
+/* video */
+.hero-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
 }
 
-/* keep logos at bottom */
-.hero-brands {
-  position: absolute;
-  bottom: 10px;
+/* overlay */
+.hero-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.45);
+z-index:-1;
 }
 
-.hero-video::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35);
+/* mobile video hidden */
+.mobile-video{
+display:none;
 }
 
-.brands {
-  width: 90px;
-  height: 80px;
-  margin: 5px;
+/* mobile screen */
+@media (max-width:768px){
+
+.desktop-video{
+display:none;
 }
 
+.mobile-video{
+display:block;
+}
 
+}
+
+/* logos bottom */
+
+.hero-brands{
+position:absolute;
+bottom:15px;
+}
+
+.brands{
+width:90px;
+height:80px;
+margin:5px;
+}
 
 /*hero section*/
 
@@ -338,19 +359,80 @@ events end*/
 
 
 /*contact us*/
-.contact-img{
-width:100%;
-height:250px;
-object-fit;
-border-radius:8px;
+.map-wrapper{
+  width:100%;
+  min-height:420px;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.contact-form{
+  background:white;
+  padding:30px;
+  border-radius:8px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+@media (max-width:768px){
+.map-wrapper{
+min-height:300px;
+}
 }
 /*contact us end*/
 
+/*footer*/
+.footer{
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 0px;
+}
+/*footer end*/
 
 
 
+/*floting icons*/
+.social-float{
+position:fixed;
+right:20px;
+top:88%;
+transform:translateY(-50%);
+display:flex;
+flex-direction:column;
+gap:10px;
+z-index:999;
+}
 
+.social-icon{
+width:45px;
+height:45px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+transition:0.3s;
+}
 
+.social-icon:hover{
+transform:scale(1.1);
+}
+
+/* Colors */
+
+.fb{
+background:#1877f2;
+}
+
+.tw{
+background:#000000;
+}
+
+.ig{
+background:#e1306c;
+}
+/*floating icons*/
 
 
 
