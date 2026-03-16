@@ -18,14 +18,30 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
 
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
 
     <title>RES</title>
   </head>
   <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="img/main.mp4" type="video/mp4" />
+    </video>
+
     <!-- Floating Social Icons -->
     <div class="social-float">
-      <a href="https://www.facebook.com/share/1F31uzGCS9/" target="_blank" class="social-icon fb">
+      <a
+        href="https://www.facebook.com/share/1F31uzGCS9/"
+        target="_blank"
+        class="social-icon fb"
+      >
         <i class="bi bi-facebook"></i>
       </a>
 
@@ -37,97 +53,81 @@
         <i class="bi bi-instagram"></i>
       </a>
     </div>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-md fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img class="logo" src="img\logo.jpeg" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skill Programs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<nav class="navbar" id="navbar">
 
-    <!--Navbar Ends-->
-   <!-- Hero Section -->
-<div class="container-fluid px-0 hero-main">
+<div class="nav-container">
 
-  <div class="hero">
+<!-- Logo -->
+<a href="#" class="logo">
+<img src="img/logo.jpeg">
+</a>
 
-    <!-- Desktop Video -->
-    <video autoplay muted loop playsinline class="hero-video desktop-video">
-      <source src="img/main.mp4" type="video/mp4">
-    </video>
+<!-- Desktop Menu -->
+<ul class="nav-menu" id="navMenu">
+  <div class="close-btn" id="closeMenu">✕</div>
+<li><a href="#">Home</a></li>
+<li><a href="#skills">Skill Programs</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-    <!-- Mobile Video -->
-    <video autoplay muted loop playsinline class="hero-video mobile-video">
-      <source src="img/main-mobile.mp4" type="video/mp4">
-    </video>
-
-    <!-- Dark Overlay -->
-    <div class="hero-overlay"></div>
-
-    <div class="hero-text text-center">
-
-      <h1>Research Education Society</h1>
-      <p>Education with Values. Skills with Purpose.</p>
-
-      <button role="button" class="golden-button">
-        <span class="golden-text">Explore !</span>
-      </button>
-
-      <marquee>
-        <i class="bi bi-stars text-warning"></i>
-        New Notification : Lamani Kasuthi (ಲಂಬಾಣಿ ಕಸೂತಿ) Application are open from 10-03-2026 for Bidar District (KA)
-      </marquee>
-
-    </div>
-
-    <div class="hero-brands text-center">
-      <p>Partners</p>
-      <img class="brands" src="img/logo1.jpeg">
-      <img class="brands" src="img/logo2.jpeg">
-      <img class="brands" src="img/logo3.jpeg">
-      <img class="brands" src="img/logo4.jpeg">
-    </div>
-
-  </div>
+<!-- Hamburger -->
+<div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
 
 </div>
 
+</nav>
+
+
+    <!-- Hero Section -->
+    <div class="container-fluid px-0 hero-main">
+      <div class="hero">
+        <!-- Desktop Video 
+        <video autoplay muted loop playsinline class="hero-video desktop-video">
+          <source src="img/main.mp4" type="video/mp4" />
+        </video>
+
+       
+        <div class="hero-overlay"></div>
+          Dark Overlay -->
+
+        <div class="hero-text text-center">
+          <h1>Research Education Society</h1>
+          <p>Education with Values. Skills with Purpose.</p>
+
+          <button role="button" class="golden-button">
+            <span class="golden-text">Explore !</span>
+          </button>
+
+          <marquee>
+            <i class="bi bi-stars text-warning"></i>
+            New Notification : Lamani Kasuthi (ಲಂಬಾಣಿ ಕಸೂತಿ) Application are
+            open from 10-03-2026 for Bidar District (KA)
+          </marquee>
+        </div>
+
+        <div class="hero-brands text-center">
+          <p>Partners</p>
+          <img class="brands" src="img/logo1.jpeg" />
+          <img class="brands" src="img/logo2.jpeg" />
+          <img class="brands" src="img/logo3.jpeg" />
+          <img class="brands" src="img/logo4.jpeg" />
+        </div>
+      </div>
+    </div>
+
     <!-- Skill Programmes -->
     <section class="skill-programs py-5" id="skills">
-      <div class="container text-center">
-        <h1 class="titles mb-5">Skill Programmes</h1>
+      <div class="container text-center glass-card  p-5 skill-container">
+        <h1 class="accent-color mb-5 titles">
+          <i class="bi bi-gear-wide-connected"></i> Skill Programs
+        </h1>
 
         <div class="row g-4">
           <div class="col-12 col-md-4 col-lg-4">
@@ -175,153 +175,12 @@
       </div>
     </section>
 
-    <!--Events
-
-    <div class="container events-container text-center">
-      <svg class="d-none" xmlns="http://www.w3.org/2000/svg">
-        <symbol id="enlarge" viewBox="0 0 16 16">
-          <path
-            d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"
-          />
-        </symbol>
-        <symbol id="exit" viewBox="0 0 16 16">
-          <path
-            d="M5.5 0a.5.5 0 0 1 .5.5v4A1.5 1.5 0 0 1 4.5 6h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 10 4.5v-4a.5.5 0 0 1 .5-.5zM0 10.5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 6 11.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zm10 1a1.5 1.5 0 0 1 1.5-1.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4z"
-          />
-        </symbol>
-      </svg>
-     
-
-      <section class="photo-gallery" id="skill">
-        <div class="container">
-            <h1 class="titles mt-5">Skill Programmes</h1>
-          <div
-            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid"
-          >
-            <div class="col">
-              <a class="gallery-item" href="img\ev1.jpeg">
-                <img
-                  src="img\ev1.jpeg"
-                  class="img-fluid"
-                  alt="RES Head Office"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="img\ev2.jpeg">
-                <img
-                  src="img\ev2.jpeg"
-                  class="img-fluid"
-                  alt="Ipsum lorem dolor sit amet"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="img\ev3.jpeg">
-                <img
-                  src="img\ev3.jpeg"
-                  class="img-fluid"
-                  alt="Dolor lorem ipsum sit amet"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="img\ev4.jpeg">
-                <img
-                  src="img\ev4.jpeg"
-                  class="img-fluid"
-                  alt="Sit amet lorem ipsum dolor"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="img\ev5.jpeg">
-                <img
-                  src="img\ev5.jpeg"
-                  class="img-fluid"
-                  alt="Aut ipsam deserunt nostrum quo"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="img\ev6.jpeg">
-                <img
-                  src="img\ev6.jpeg"
-                  class="img-fluid"
-                  alt="Nulla ex nihil eligendi tempora"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="img\ev7.jpeg">
-                <img
-                  src="img\ev7.jpeg"
-                  class="img-fluid"
-                  alt="Nemo perspiciatis voluptatum"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="img\ev8.jpeg">
-                <img
-                  src="img\ev8.jpeg"
-                  class="img-fluid"
-                  alt="Accusantium consequuntur modi"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="img\ev9.jpeg">
-                <img
-                  src="img\ev9.jpeg"
-                  class="img-fluid"
-                  alt="Dolore asperiores reprehenderit"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="modal fade lightbox-modal" id="lightbox-modal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
-          <div class="modal-content">
-            <button
-              type="button"
-              class="btn-fullscreen-enlarge"
-              aria-label="Enlarge fullscreen"
-            >
-              <svg class="bi"><use href="#enlarge"></use></svg>
-            </button>
-            <button
-              type="button"
-              class="btn-fullscreen-exit d-none"
-              aria-label="Exit fullscreen"
-            >
-              <svg class="bi"><use href="#exit"></use></svg>
-            </button>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-            <div class="modal-body">
-              <div class="lightbox-content">
-               
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    Events-->
+    <!--Skill program-->
 
     <!-- Services Section -->
     <section class="services py-5">
-      <div class="container text-center" id="services">
-        <h1 class="titles mb-5">Services</h1>
+      <div class="container text-center services-grid glass-card" id="services">
+        <h1 class="titles accent-color mb-5">Services</h1>
 
         <div class="row g-4">
           <div class="col-6 col-md-4 col-lg-3">
@@ -387,7 +246,7 @@
             <div class="goal-box">
               <h3 class="mb-3 titles">Vision</h3>
               <i class="bi bi-bullseye ico"></i>
-              <p>
+              <p class="texto">
                 To empower unemployed youth and individuals across India by
                 equipping them with inclusive, practical, and future-ready
                 skills that enable them to become job creators rather than job
@@ -412,11 +271,11 @@
 
     <!--about section-->
     <section class="about text-center" id="about">
-      <div class="container text-center about-container">
-        <h1 class="mt-5">About Us</h1>
+      <div class="container text-center about-container glass-card">
+        <h1 class="accent-color titles mt-5">About Us</h1>
         <div class="row">
           <div class="col-lg-12">
-            <p class="about-text">
+            <p class="about-text texto">
               Research Education Society (RES) is a leading educational and
               skill development organization dedicated to empowering individuals
               through quality education and industry-oriented training. With a
@@ -425,7 +284,7 @@
               lives and communities since its inception.
             </p>
 
-            <p>
+            <p class="texto">
               Empowering Minds, Transforming Lives Since 1990. For over three
               decades, the Research Education Society (RES), Bidar, has been
               more than just an institution, it has been a medium for change.
@@ -441,24 +300,24 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <div class="stats">
+            <div class="stats text-center">
               <div>
-                <h2 class="counter" data-target="8000">0</h2>
-                <p>Students Trained</p>
+                <h2 class="counter conter-text" data-target="8000">0</h2>
+                <p class="">Students Trained</p>
               </div>
 
               <div>
-                <h2 class="counter" data-target="200">0</h2>
-                <p>Training Conducted</p>
+                <h2 class="counter conter-text" data-target="200">0</h2>
+                <p class="">Training Conducted</p>
               </div>
 
               <div>
-                <h2 class="counter" data-target="6200">0</h2>
-                <p>Jobs Placed</p>
+                <h2 class="counter conter-text" data-target="6200">0</h2>
+                <p class="">Jobs Placed</p>
               </div>
               <div>
-                <h2 class="counter" data-target="250">0</h2>
-                <p>Trained Professionals</p>
+                <h2 class="counter conter-text" data-target="250">0</h2>
+                <p class="">Trained Professionals</p>
               </div>
             </div>
           </div>
@@ -573,8 +432,8 @@
     <!-- Contact Section -->
     <!-- Contact Section -->
     <section id="contact" class="contact-section py-5">
-      <div class="container text-center">
-        <h1 class="titles mt-5">Contact us</h1>
+      <div class="container text-center secnd-bg p-5 contact-container">
+        <h1 class="titles accent-color mt-5">Contact us</h1>
 
         <div class="row g-4 align-items-stretch">
           <!-- LEFT SIDE MAP -->
@@ -690,7 +549,6 @@
             <p>Samarth</p>
             <p>Kaushalya Karnataka</p>
           </div>
-
         </div>
       </div>
 
@@ -703,6 +561,7 @@
     </footer>
 
     <script src="script.js"></script>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
