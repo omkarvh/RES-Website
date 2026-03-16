@@ -9,6 +9,7 @@ body{
   
   color:white;
 }
+
 /*experimental video background*/
 #bg-video{
   position: fixed;
@@ -94,21 +95,34 @@ body::before{
   background: rgba(0, 0, 0, 0.45);
   z-index: -1;
 }
-
-
-
-/* logos bottom */
-
-.hero-brands {
-  position: absolute;
-  bottom: 15px;
+.hero-heading{
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; 
+  font-style: 200px;
 }
 
-.brands {
-  width: 90px;
-  height: 80px;
-  margin: 5px;
+.hero-heading{
+font-size: clamp(40px, 6vw, 80px); /* responsive */
+font-weight: 400;
+letter-spacing: 2px;
+margin-bottom: 20px;
+line-height: 1.2;
+
+/* gradient text */
+background: linear-gradient(90deg,#ffffff,#D4AF37,#ffffff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+/* glow */
+text-shadow: 0 0 20px rgba(255,215,0,0.4);
 }
+
+/* subtitle */
+.hero-text p{
+font-size: clamp(16px,2vw,22px);
+opacity:0.9;
+margin-bottom:20px;
+}
+
 
 /*hero section*/
 
@@ -207,41 +221,7 @@ body::before{
 
 /*Team end*/
 
-/*skill programmes*/
-.skill-container{
-  border-radius: 0%;
-  border:1px solid #D4AF37;
-}
 
-.skill-card {
-  display: block;
-  text-decoration: none;
-  background-color: #0B1F3A;
-  color: white;
-  border-radius: 10px;
-  border: 5px solid #D4AF37;
-  overflow: hidden;
-  box-shadow: 0 5px 15px #F8F6F0;
-  transition: 0.3s;
-
-  
-}
-
-.skill-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: fill;
-}
-
-.skill-card p {
-  padding: 10px;
-  font-weight: 600;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-}
-/*skill programmes end*/
 
 /*services*/
 .services-grid {
@@ -251,7 +231,7 @@ body::before{
   border:1px solid #D4AF37;
 }
 .service-card {
-  background: #0B1F3A;
+ 
   padding: 30px 20px;
   border-radius: 10px;
   box-shadow: 0 5px 15px #F8F6F0;
@@ -371,61 +351,6 @@ body::before{
 }
 /*floating icons*/
 
-/* From Uiverse.io by elijahgummer */
-.golden-button {
-  touch-action: manipulation;
-  display: inline-block;
-  outline: none;
-  font-family: inherit;
-  font-size: 1em;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 0.3em;
-  height: 2.75em;
-  line-height: 2.5em;
-  text-transform: uppercase;
-  padding: 0 1em;
-  box-shadow:
-    0 3px 6px rgba(0, 0, 0, 0.16),
-    0 3px 6px rgba(110, 80, 20, 0.4),
-    inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
-    inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
-  background-image: linear-gradient(
-    160deg,
-    #a54e07,
-    #b47e11,
-    #fef1a2,
-    #bc881b,
-    #a54e07
-  );
-  border: 1px solid #a55d07;
-  color: rgb(120, 50, 5);
-  text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  background-size: 100% 100%;
-  background-position: center;
-}
-
-.golden-button:focus,
-.golden-button:hover {
-  background-size: 150% 150%;
-  box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23),
-    inset 0 -2px 5px 1px #b17d10,
-    inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
-  border: 1px solid rgba(165, 93, 7, 0.6);
-  color: rgba(120, 50, 5, 0.8);
-}
-
-.golden-button:active {
-  box-shadow:
-    0 3px 6px rgba(0, 0, 0, 0.16),
-    0 3px 6px rgba(110, 80, 20, 0.4),
-    inset 0 -2px 5px 1px #b17d10,
-    inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
-}
 
 
 .texto{
@@ -633,4 +558,43 @@ display:block;
     transparent,
     rgba(255, 255, 255, 0.3)
   );
+}
+
+/*skill section */
+/* SKILL PROGRAMS */
+
+.skill-card{
+display:block;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border-radius:15px;
+padding:40px 20px;
+text-align:center;
+text-decoration:none;
+color:white;
+transition:0.35s;
+height:100%;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.skill-card:hover{
+transform:translateY(-8px);
+background:rgba(255,255,255,0.08);
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+color: #D4AF37;
+}
+
+.skill-logo{
+width:70px;
+margin-bottom:20px;
+}
+
+.skill-card h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.skill-card p{
+font-size:14px;
+opacity:0.8;
 }
