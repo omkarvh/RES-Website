@@ -48,10 +48,10 @@ body::before{
 }
 /*experimental video background end*/
 .titles{
-  font-family: "Anta", sans-serif;
+  
 }
 .content{
-  font-family: "Figtree", sans-serif;
+ 
 }
 
 .logoo {
@@ -74,7 +74,7 @@ body::before{
   overflow: hidden;
   color: white;
   text-align: center;
-  font-family: "Fjalla One", sans-serif;
+ 
 }
 
 
@@ -86,7 +86,7 @@ body::before{
   z-index: -1;
 }
 .hero-heading{
-  font-family: "Anta", sans-serif;
+  font-family:'Times New Roman', Times, serif;
   font-style: 200px;
 }
 
@@ -280,7 +280,7 @@ margin-bottom:20px;
 /*footer*/
 .footer {
   border: 1px solid #D4AF37;
-  font-family: "Anta", sans-serif;
+ 
   color: white;
   text-align: center;
   padding: 5px;
@@ -334,7 +334,7 @@ margin-bottom:20px;
 
 
 .texto{
-  font-family: 'Cinzel', serif;
+  font-family: 'Times New Roman', Times, serif;
 
   font-size:large;
   
@@ -358,7 +358,7 @@ margin-bottom:20px;
 /*recent edits*/
 body{
 margin:0;
-font-family:sans-serif;
+font-family:'Times New Roman', Times, serif;
 background:#0B1F3A;
 color:white;
 }
@@ -372,7 +372,7 @@ width:100%;
 padding:15px 0;
 z-index:1000;
 transition:0.4s;
-font-family: "Anta", sans-serif;
+
 }
 
 .navbar.scrolled{
