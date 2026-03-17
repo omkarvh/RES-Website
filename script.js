@@ -52,3 +52,53 @@ navbar.classList.add("scrolled")
 navbar.classList.remove("scrolled")
 }
 })
+
+//typing effect 
+
+
+const texts = [
+  "Education is Power 📚",
+  "Knowledge is Strength 🧠",
+  "Consistency is Key 🔑",
+  "Discipline Builds Success 💪",
+  "Dreams Need Action 🚀",
+  "Focus Creates Results 🎯",
+  "Hard Work Beats Talent ⚡",
+  "Growth Never Stops 📈"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+function type() {
+  if (count >= texts.length) count = 0;
+
+  currentText = texts[count];
+  letter = currentText.slice(0, index++);
+
+  document.getElementById("typing").textContent = letter;
+
+  if (index > currentText.length) {
+    setTimeout(erase, 1500);
+  } else {
+    setTimeout(type, 100);
+  }
+}
+
+function erase() {
+  letter = currentText.slice(0, index--);
+  document.getElementById("typing").textContent = letter;
+
+  if (index < 0) {
+    count++;
+    index = 0;
+    setTimeout(type, 500);
+  } else {
+    setTimeout(erase, 50);
+  }
+}
+
+// start animation
+type();
