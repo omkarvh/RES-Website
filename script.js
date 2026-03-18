@@ -102,3 +102,81 @@ function erase() {
 
 // start animation
 type();
+
+
+
+//pagewise data 
+
+const projectData = {
+  "index.html": {
+    title: "Main Society Development",
+    desc: "Overall development initiatives and educational expansion programs.",
+    date: "Start Date: 01-01-2026"
+  },
+
+  "CSR.html": {
+    title: "Corporate Social Responsibility",
+    desc: "Programs focused on community development and social impact.",
+    date: "Start Date: 05-02-2026"
+  },
+
+  "Disable.html": {
+    title: "Disability Support Program",
+    desc: "Helping specially-abled individuals with training and resources.",
+    date: "Start Date: 15-02-2026"
+  },
+
+  "institute.html": {
+    title: "Institute Development",
+    desc: "Enhancing infrastructure and quality of affiliated institutions.",
+    date: "Start Date: 20-02-2026"
+  },
+
+  "leader.html": {
+    title: "Leadership Program",
+    desc: "Training future leaders with skills and mentorship.",
+    date: "Start Date: 01-03-2026"
+  },
+
+  "MOT.html": {
+    title: "Motivation Program",
+    desc: "Inspiring youth through workshops and seminars.",
+    date: "Start Date: 10-03-2026"
+  },
+
+  "PMKK.html": {
+    title: "Skill Development (PMKK)",
+    desc: "Government-supported skill training programs.",
+    date: "Start Date: 12-03-2026"
+  },
+
+  "PMKVY.html": {
+    title: "PMKVY Training",
+    desc: "Pradhan Mantri Kaushal Vikas Yojana training initiatives.",
+    date: "Start Date: 18-03-2026"
+  },
+
+  "PMVK.html": {
+    title: "Vocational Training",
+    desc: "Hands-on vocational skill training programs.",
+    date: "Start Date: 22-03-2026"
+  }
+};
+
+// Detect current page
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+console.log("Current Page:", currentPage);
+
+// Set content
+const data = projectData[currentPage];
+
+if (data) {
+  document.getElementById("projectTitle").innerText = data.title;
+  document.getElementById("projectDesc").innerText = data.desc;
+  document.getElementById("projectDate").innerText = data.date;
+}
+
+// Toggle function
+function toggleProject() {
+  document.getElementById("projectBox").classList.toggle("active");
+}

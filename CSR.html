@@ -14,7 +14,7 @@
 
     <style>
       /* banner */
-       .program-banner {
+      .program-banner {
         min-height: 300px;
         height: 50vh;
         background: url("img/CSR.jpeg") center center no-repeat;
@@ -26,8 +26,7 @@
         text-align: center;
       }
 
-
-       @media (max-width: 768px) {
+      @media (max-width: 768px) {
         .program-banner {
           height: auto;
           padding: 60px 20px;
@@ -53,6 +52,22 @@
       .program-gallery img:hover {
         transform: scale(1.05);
       }
+      .project-box {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s ease;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 0 20px;
+        color: white;
+      }
+
+      .project-box.active {
+        max-height: 300px;
+        padding: 20px;
+        margin-top: 15px;
+      }
     </style>
   </head>
   <body>
@@ -62,15 +77,12 @@
     </div>
 
     <!-- Banner -->
-    <section class="program-banner mt-3">
-      
-    </section>
+    <section class="program-banner mt-3"></section>
 
     <!-- Programme Details -->
     <section class="py-5">
       <div class="container">
-        <h2 class="mb-4">Program Details</h2>
-
+        <h2 class="mb-4 text-warning">Program Details</h2>
 
         <p>
           The objective of Corporate Social Responsibility (CSR) is to ensure
@@ -87,11 +99,33 @@
         </p>
       </div>
     </section>
+    <!--ongoing sessions-->
+    <!-- Ongoing Projects Section -->
+    <!-- Ongoing Projects -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <button class="btn btn-primary mb-4" onclick="toggleProject()">
+          Ongoing Projects
+        </button>
+
+        <div id="projectBox" class="project-box">
+          <h5 id="projectTitle"></h5>
+          <p id="projectDesc"></p>
+          <small id="projectDate" class="text-muted"></small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ongoing Projects Section -->
+
+    <!--ongoing sessions-->
 
     <!-- Photo Gallery -->
     <section class="program-gallery py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-5">Program Gallery</h2>
+        <h2 class="text-center text-warning bg-success mb-5">
+          Program Gallery
+        </h2>
 
         <div class="row g-4">
           <div class="col-md-4">
@@ -128,7 +162,7 @@
       </p>
       <p class="mb-0">Designed by <strong>Omkar's Clan</strong></p>
     </footer>
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
