@@ -336,6 +336,7 @@ body {
   padding: 15px 0;
   z-index: 1000;
   transition: 0.4s;
+  font-size: large;
 }
 
 .navbar.scrolled {
@@ -626,4 +627,46 @@ body {
   margin: 0;
   font-size: 14px;
   opacity: 0.85;
+}
+
+/*contact header top */
+.top-bar {
+  
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 0;
+
+  top: 0;
+  z-index: 999;
+}
+
+.top-bar .container {
+  display: flex;
+  align-items: center;
+}
+
+.left-text,
+.right-text {
+  white-space: nowrap;
+}
+
+.scroll-text {
+  overflow: hidden;
+  flex: 1;
+  margin: 0 15px;
+}
+
+.scroll-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 12s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
